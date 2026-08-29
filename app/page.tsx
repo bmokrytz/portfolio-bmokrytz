@@ -13,7 +13,7 @@ export default function Home() {
           <p className="text-2xl mb-3">Software Engineer</p>
           <p className={paragraph_classname}>{landing.paragraph_1_v2}</p>
           <p className={paragraph_classname}>{landing.paragraph_2_v1}</p>
-          <p className={paragraph_classname}>{landing.paragraph_3_v1}</p>
+          <p className={paragraph_classname}>{landing.paragraph_3_v2}</p>
         </div>
       </section>
     </div>

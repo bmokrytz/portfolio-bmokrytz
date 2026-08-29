@@ -28,4 +28,7 @@ export const landing = {
     paragraph_3_v1: `I’m looking for an entry-level software engineering role where I 
         can contribute to real products, take ownership of features, learn from 
         experienced developers, and continue growing as an engineer.`,
+    paragraph_3_v2: `I’m currently looking for my first software engineering role, 
+        where I can contribute to real products, take on meaningful challenges, 
+        and grow alongside an experienced engineering team.`,
 }
