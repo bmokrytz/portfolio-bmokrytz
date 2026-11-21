@@ -12,7 +12,7 @@ export default function About() {
         <div className="bg-background flex-1 pl-30 pb-30 pt-30 text-black">
             
             <section className={`${section_classname} mb-10`}>
-                <div className="text-black flex-1 min-w-150">
+                <div className="text-black min-w-180">
                     <p className="text-6xl mb-10">About Me</p>
                     <p className={paragraph_classname}>
                         I'm a Computer Science graduate from the University of Guelph, 
@@ -32,15 +32,18 @@ export default function About() {
                         along the way.
                     </p>
                 </div>
-                <CaptionImage 
-                caption="Brandon Mokrytzki"
-                alt='Hero image of Brandon Mokrytzki smiling in front of a tree.' 
-                src={heroImage}
-                className="w-[300px] h-auto ml-10 mr-70"
-                />
+                <div className="ml-10 flex flex-row flex-1 justify-start">
+                    <CaptionImage 
+                    caption="Brandon Mokrytzki"
+                    alt='Hero image of Brandon Mokrytzki smiling in front of a tree.' 
+                    src={heroImage}
+                    className="max-w-[300px] h-auto  mr-5"
+                    />
+                </div>
+                
             </section>
             <section className={section_classname}>
-                <div>
+                <div className="text-black min-w-180">
                     <p className={subtitle_classname}>Outside of Code</p>
                     <p className={paragraph_classname}>
                         I love reading science fiction, with Isaac Asimov's <em>Foundation</em> series 
@@ -66,7 +69,7 @@ export default function About() {
                     </p>
                 </div>
                 <div className="block">
-                    <div className="ml-10 flex flex-row">
+                    <div className="ml-10 flex flex-row flex-1 justify-start">
                         <CaptionImage
                         caption="Campfire at Tea Lake - Algonquin Park"
                         alt='Photo of a campfire during a camping trip in Algonquin Park.' 

@@ -1,9 +1,12 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Home() {
   const paragraph_classname = "text-xl text-black/80";
 
   return (
     <div className="bg-background flex-1 text-black">
-      <section>
+      <section className="flex flex-row">
         <div className="ml-30 mt-30 flex flex-col gap-2 max-w-150">
           <p className="text-6xl font-semibold tracking-tighter">Brandon Mokrytzki</p>
           <p className="text-2xl mb-3">Software Engineer</p>
@@ -22,6 +25,25 @@ export default function Home() {
             contribute to real products, take on meaningful challenges, and grow alongside 
             an experienced engineering team.
           </p>
+        </div>
+        <div className="flex flex-col gap-10 items-center border-1 ml-60 border-black ml-40 mt-30 text-white hover:text-cyan-200">
+          <Link className="inline-flex items-center bg-gray-700 mt-30 rounded-3xl p-3 transform transition-all duration-300 ease-out hover:shadow-lg   hover:translate-x-3 hover:shadow-[-6px_8px_15px_var(--color-terracotta)]"
+            key="/projects"
+            href="/projects">
+              My Projects <span className="material-symbols-outlined">arrow_right_alt</span>
+          </Link>
+          <Link className="inline-flex items-center bg-gray-700 rounded-3xl p-3 transform transition-all duration-300 ease-out hover:shadow-lg   hover:translate-x-3 hover:shadow-[-6px_8px_15px_var(--color-terracotta)]"
+            key="https://github.com/bmokrytz"
+            target="_blank"
+            href="https://github.com/bmokrytz">
+              <Image 
+          src="/github-terracotta.png"
+          width={20}
+          height={20}
+          alt="GitHub Logo"
+        />
+              GitHub
+          </Link>
         </div>
       </section>
     </div>
